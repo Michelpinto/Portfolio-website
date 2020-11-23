@@ -1,0 +1,114 @@
+.footer {
+    padding: 6rem 10.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5.5rem 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 6rem 6rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 6rem 3rem;
+    }
+
+    &__logo {
+        padding-bottom: 15rem;
+        &--1 {
+            height: 6rem;
+            width: 6rem;
+        }
+    }
+
+    &__info {
+        font-size: 1.5rem;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        //gap: 35rem;
+
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--c {
+            margin-right: 32.5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-right: 22.5rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                align-self: center;
+                margin-bottom: 3rem;
+                margin-right: 0;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                align-self: center;
+            }
+        }
+
+        &--s {
+            list-style: none;
+            display: flex;
+
+            @media only screen and (max-width: $bp-small) {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    &__list {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-primary;
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        transition: all 0.2s;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 0;
+            margin-right: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 0;
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            color: $color-tertiary;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.iconify {
+    &__in {
+        margin-right: 5px;
+        width: 2rem;
+        height: 2rem;
+        align-self: baseline;
+    }
+
+    margin-right: 5px;
+    width: 2rem;
+    height: 2rem;
+}

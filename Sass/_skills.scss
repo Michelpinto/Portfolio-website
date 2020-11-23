@@ -1,0 +1,52 @@
+.skills {
+    padding: 15rem 10.5rem;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5.5rem 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 15rem 6rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 12.5rem 3rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        //gap: 12rem;
+        padding-top: 8rem;
+
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--1 {
+            margin-right: 12rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-right: 0;
+                margin-bottom: 12rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin-right: 0;
+                margin-bottom: 12rem;
+            }
+        }
+
+        &--1,
+        &--2 {
+            p {
+                padding-top: 2rem;
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// COLOR VARIABLES
+$color-primary: #ebebeb;
+$color-secondary: #1f1f1f;
+$color-tertiary: #569cca;
+$color-tertiary-dark: #0f4c75;
+
+// FONT STYLES
+
+$font-display: "Montserrat", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 56.25em; // 900px 1000/16
+$bp-medium: 50em; // 800px 800/16
+$bp-small: 43.75em; // 700px 700/16
+$bp-smallest: 31.25em; // 500px 500/16
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-display;
+    color: $color-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: $color-secondary;
+    background-image: url(../img/circle.svg);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position-x: 61rem;
+    background-position-y: 0rem;
+    margin: 0 0;
+
+    @media only screen and (max-width: $bp-large) {
+        background-size: 900px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        background-size: 900px;
+        background-position-x: 45rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        background-size: 800px;
+        background-position-x: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        background-size: 600px;
+        background-position-x: 20rem;
+    }
+}
+
+.mb-small {
+    margin-bottom: 4rem;
+}
