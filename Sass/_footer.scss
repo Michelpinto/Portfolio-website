@@ -106,6 +106,10 @@
         width: 2rem;
         height: 2rem;
         align-self: baseline;
+
+        @media only screen and (max-width: $bp-smallest) {
+            align-self: baseline;
+        }
     }
 
     margin-right: 5px;

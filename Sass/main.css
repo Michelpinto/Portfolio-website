@@ -242,6 +242,13 @@ body {
       align-self: baseline;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .iconify__in {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+}
+
 .header {
   padding: 6rem 10.5rem;
 }
